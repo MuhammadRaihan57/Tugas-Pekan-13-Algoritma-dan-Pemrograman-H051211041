@@ -1,0 +1,294 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMezp2VYbM1OVIhNPsSDHlY",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/MuhammadRaihan57/Tugas-Pekan-13-Algoritma-dan-Pemrograman-H051211041/blob/main/Tugas%20Pekan%2013%20H051211041\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**1. BUATLAH PROGRAM UNTUK MENGHITUNG PENJUMLAHAN 2 BUAH MATRIKS**"
+      ],
+      "metadata": {
+        "id": "PZGFY5NGqHjs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U4f5oGBspVIe",
+        "outputId": "9175f538-53d1-4b08-e6ae-33b0ed9b8e33"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Program Penjumlahan Matriks ordo 2*2\n",
+            "18 4  \n",
+            "8 7  \n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\" Program Penjumlahan Matriks ordo 2*2\")\n",
+        "\n",
+        "matriksA= [\n",
+        "           [6,1],\n",
+        "           [6,3],\n",
+        "]\n",
+        "\n",
+        "matriksB= [\n",
+        "           [12,3],\n",
+        "           [2,4],\n",
+        "]\n",
+        "\n",
+        "for x in range(0, len(matriksA)):\n",
+        "  for y in range(0, len(matriksA[0])):\n",
+        "    print(matriksA[x][y] + matriksB[x][y], end=' ')\n",
+        "  print(' ')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**2. Buatlah program untuk menghitung total pembelian N buah barang dengan harga dan\n",
+        "jumlah tertentu**"
+      ],
+      "metadata": {
+        "id": "u7lVaByctg5Q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "TotalBarang = int(input('Masukkan Total Barang: '))\n",
+        "for X in range(TotalBarang):\n",
+        "  print('Barang',X+1)\n",
+        "HargaBarang = int(input('Masukkan Harga Barang: '))\n",
+        "\n",
+        "TotalHarga= TotalBarang * HargaBarang\n",
+        "print('Total Harga  : ',TotalHarga)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9Q9R4PQqH_F9",
+        "outputId": "7c73fe89-caaa-4833-8a6c-b031b516e548"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Sheilla's Cookies\n",
+            "Nama barang:ayam\n",
+            "Harga barang: Rp. 300\n",
+            "Jumlah barang yang dibeli: 2\n",
+            "Total Harga =  Rp. 600\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**3. Buatlah program untuk menghitung banyaknya bilangan genap ataupun bilangan ganjil\n",
+        "dari N buah bilangan yang diinput secara acak**"
+      ],
+      "metadata": {
+        "id": "dc-dYCcerlGb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "awal = int(input('Input Nilai Awal : '))\n",
+        "akhir = int(input('Input Nilai Akhir : '))\n",
+        "\n",
+        "for Y in range(awal,akhir+1):\n",
+        "  if Y %2 == 0:\n",
+        "    print (Y, 'adalah jenis Bilangan Genap')\n",
+        "  else :\n",
+        "    print (Y, 'adalah jenis Bilangan Ganjil')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KSvBK8-HUP8a",
+        "outputId": "0029f09d-30b9-477a-d955-9273efcb8340"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Input Nilai Awal : 20\n",
+            "Input Nilai Akhir : 22\n",
+            "20 adalah jenis Bilangan Genap\n",
+            "21 adalah jenis Bilangan Ganjil\n",
+            "22 adalah jenis Bilangan Genap\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**4. Buatlah program untuk menampilkan bilangan kelipatan 3 diantara bilangan tertentu**"
+      ],
+      "metadata": {
+        "id": "kPIZR8TDMbr6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "awal=int(input('Set Nilai Kelipatan 3 Awal='))\n",
+        "akhir=int(input('Set Nilai Kelipatan 3 Akhir='))\n",
+        "\n",
+        "s = ''\n",
+        "i = 0\n",
+        "\n",
+        "for i in range (awal,akhir+3,3):\n",
+        "  print(i,end=' ')\n",
+        "  count=count+1\n",
+        "\n",
+        "while (i>awal,i<akhir):\n",
+        "  s += str(i)+' '\n",
+        "  i += 3\n",
+        "print(s)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XCs-YPkkNeDL",
+        "outputId": "316a8bc6-779a-489a-e158-ffe4ff129e1b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 3 6 9 12 15 18 21 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**5.Buatlah program untuk menampilkan bentuk bilangan seperti berikut ini:\n",
+        "Bilangan : <input suatu bilangan (misal:5)>**"
+      ],
+      "metadata": {
+        "id": "PAeXHz_KMguO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mr = ''\n",
+        "for i in range (1,6) :\n",
+        "  mr += str(i)+' '\n",
+        "  print (mr)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aKcPwqt-NRx5",
+        "outputId": "c771be06-fa15-4663-c19e-899eb981bb29"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 \n",
+            "1 2 \n",
+            "1 2 3 \n",
+            "1 2 3 4 \n",
+            "1 2 3 4 5 \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**6. Buatlah program untuk menghitung dan menampilkan bentuk berikut ini:**\n",
+        "------------------------------------------------------------------------------------------\n",
+        "**No. Nama Mhs N.Tugas N.Kuis N.UTS N.UAS NilaiAkhir**"
+      ],
+      "metadata": {
+        "id": "HlTcxbxjM_Kj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "datamaba = PrettyTable ([\"No.\", \"Nama Mahasiswa\", \"Nilai Tugas\", \"Nilai Kuis\", \"Nilai UTS\", \"Nilai UAS\"])\n",
+        "datamaba.add_row([\"1\", \" \", \" \", \" \", \" \", \" \"])\n",
+        "datamaba.add_row([\"2\", \" \", \" \", \" \", \" \", \" \"])\n",
+        "print(datamaba)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pZujzH62Xr9i",
+        "outputId": "78ba241f-9307-436b-884e-c90c944b9f2f"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "+-----+----------------+-------------+------------+-----------+-----------+\n",
+            "| No. | Nama Mahasiswa | Nilai Tugas | Nilai Kuis | Nilai UTS | Nilai UAS |\n",
+            "+-----+----------------+-------------+------------+-----------+-----------+\n",
+            "|  1  |                |             |            |           |           |\n",
+            "|  2  |                |             |            |           |           |\n",
+            "+-----+----------------+-------------+------------+-----------+-----------+\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
